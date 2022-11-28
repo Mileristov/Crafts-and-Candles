@@ -1,10 +1,11 @@
+import Image from "next/image";
 import React from "react";
 
 const Quote = () => {
     return (
         <div className="about-wrap">
             <div className="right-about-container">
-                <img src="/radio.jpg" alt="spotify radio candle" />
+                <Image src="/radio.jpg" alt="spotify radio candle" />
             </div>
             <div className="left-about-container">
                 <h1>

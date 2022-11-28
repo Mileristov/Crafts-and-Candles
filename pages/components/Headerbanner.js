@@ -3,6 +3,7 @@ import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import { urlFor } from "../../lib/client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 const sliderStyles = {
     height: "100%",
@@ -52,9 +53,10 @@ const Headerbanner = ({ headerBanner }) => {
                 "
                 >
                     <div style={slideStyles}>
-                        <img
+                        <Image
                             src={urlFor(headerBanner[currIndex].image)}
                             className="slidestyle"
+                            alt="candle lit"
                         />
                         <motion.div
                             initial={{

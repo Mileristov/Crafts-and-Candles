@@ -4,8 +4,8 @@ const Fans = () => {
     return (
         <div className="fans-wrap">
             <h1>
-                "Hailing from beautiful Avalon Beach, Crafts and Candles offers
-                an addictive range of light for your home."
+                &quot;Hailing from beautiful Avalon Beach, Crafts and Candles
+                offers an addictive range of light for your home.&quot;
             </h1>
             <p>
                 We focus on the purity and beauty of simple shapes, textures and

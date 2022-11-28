@@ -18,9 +18,9 @@ const Candles = () => {
             <div className="right-about-video">
                 <h1>Our Packaging</h1>
                 <p>
-                    With so much plastic ending up in our oceans, we've decided
-                    to be smarter about our packaging and have chosen a more
-                    considered route; we make our packaging entirely out of
+                    With so much plastic ending up in our oceans, we&apos;ve
+                    decided to be smarter about our packaging and have chosen a
+                    more considered route; we make our packaging entirely out of
                     recycled paper, from the box to the protective buffers
                     inside it. And the candles are individually wrapped in
                     tissue paper, not plastic. So we can ship our candles
