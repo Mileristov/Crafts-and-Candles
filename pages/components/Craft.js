@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 const Craft = () => {
     return (
         <div className="craft-wrap">
@@ -22,7 +23,7 @@ const Craft = () => {
                     We love lighting a candle after a long day of work. We love
                     how it calms us down. And we love the ritual of lighting a
                     candle to transition between work and home, slowing down by
-                    candle light. What we don't love so much is a smoking
+                    candle light. What we don&apos;t love so much is a smoking
                     candle. Or a candle that drips. Nor candles that burn
                     unevenly. This is why we started Arts and Candles .
                 </p>
@@ -41,7 +42,7 @@ const Craft = () => {
                 }}
                 className="craft-text"
             >
-                <h1>THE PERFECT CANDLE CAN'T BE RUSHED.</h1>
+                <h1>THE PERFECT CANDLE CAN&apos;T BE RUSHED.</h1>
                 <p>
                     The art of candle making emerged almost 5000 years ago. By
                     the 13th century, candle making had become a guild craft in
@@ -56,10 +57,10 @@ const Craft = () => {
 
             <div className="craft-img">
                 <div>
-                    <img src="/4v4.jpg" alt="img" />
+                    <Image src="/4v4.jpg" alt="img" />
                 </div>
                 <div>
-                    <img src="/5v5.jpg" alt="img" />
+                    <Image src="/5v5.jpg" alt="img" />
                 </div>
             </div>
             <div className="craft-text">
@@ -80,7 +81,7 @@ const Craft = () => {
             </div>
             <div className="full-img">
                 <div>
-                    <img src="/1v1.jpg" alt="img" />
+                    <Image src="/1v1.jpg" alt="img" />
                 </div>
             </div>
         </div>
