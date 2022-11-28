@@ -4,9 +4,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { client, urlFor } from "../../lib/client";
-
 import { useStateContext } from "../../context/StateContext";
-import Product from "../components/Product";
 
 const ProductDetails = ({ product, products }) => {
     const { image, name, details, price } = product;

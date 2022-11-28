@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useRef } from "react";
 import Link from "next/link";
 import {
@@ -88,7 +89,7 @@ const Cart = () => {
                         cartItems.map((item) => (
                             <div className="product-cart" key={item._id}>
                                 <div className="cart-product-image-padding">
-                                    <Image
+                                    <img
                                         src={urlFor(item?.image[0])}
                                         className="cart-product-image"
                                         alt="img"

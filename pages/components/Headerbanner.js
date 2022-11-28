@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import { urlFor } from "../../lib/client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 const sliderStyles = {
     height: "100%",
@@ -53,7 +53,7 @@ const Headerbanner = ({ headerBanner }) => {
                 "
                 >
                     <div style={slideStyles}>
-                        <Image
+                        <img
                             src={urlFor(headerBanner[currIndex].image)}
                             className="slidestyle"
                             alt="candle lit"
