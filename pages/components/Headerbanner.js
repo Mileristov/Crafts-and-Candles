@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
 import { urlFor } from "../../lib/client";
@@ -29,8 +30,8 @@ const Headerbanner = ({ headerBanner }) => {
         }, 5000);
 
         return () => clearInterval(intervalId);
-    }, [currIndex, headerBanner.length]);
-
+    }, [currIndex]);
+    console.log("kif", headerBanner.length);
     return (
         <section>
             <div style={sliderStyles} className="sliderstyles">
