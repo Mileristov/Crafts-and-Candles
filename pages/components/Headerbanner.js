@@ -31,19 +31,6 @@ const Headerbanner = ({ headerBanner }) => {
         return () => clearInterval(intervalId);
     }, [currIndex, headerBanner.length]);
 
-    /*
-    const goToPrevious = () => {
-        const isFirstSlide = currIndex === 0;
-        const newIndex = isFirstSlide ? headerBanner.length - 1 : currIndex - 1;
-        setCurrIndex(newIndex);
-    };
-
-    const goToNext = () => {
-        const isLastSlide = currIndex === headerBanner.length - 1;
-        const newIndex = isLastSlide ? 0 : currIndex + 1;
-        setCurrIndex(newIndex);
-    };  */
-
     return (
         <section>
             <div style={sliderStyles} className="sliderstyles">
