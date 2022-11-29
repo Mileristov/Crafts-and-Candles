@@ -7,12 +7,6 @@ import Product from "./components/Product";
 const index = ({ products, bannerData }) => {
     return (
         <>
-            {/*  {
-                <div className="head-ing">
-                    <h1>The candle shop</h1>
-                </div>
-            }     */}
-
             <Headerbanner headerBanner={bannerData} />
 
             <div className="container">

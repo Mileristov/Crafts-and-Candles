@@ -31,7 +31,10 @@ const Headerbanner = ({ headerBanner }) => {
 
         return () => clearInterval(intervalId);
     }, [currIndex]);
-    console.log("kif", headerBanner.length);
+
+    let picUrl = urlFor(headerBanner[currIndex].image.asset._ref);
+    console.log("wads", picUrl);
+
     return (
         <section>
             <div style={sliderStyles} className="sliderstyles">
@@ -41,7 +44,7 @@ const Headerbanner = ({ headerBanner }) => {
                 >
                     <div style={slideStyles}>
                         <img
-                            src={urlFor(headerBanner[currIndex].image)}
+                            src={picUrl}
                             className="slidestyle"
                             alt="candle lit"
                         />
