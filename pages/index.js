@@ -1,8 +1,8 @@
 import React from "react";
 import { client } from "../lib/client";
-import Headerbanner from "./components/Headerbanner";
-import Instagram from "./components/Instagram";
-import Product from "./components/Product";
+import Headerbanner from "../component/Headerbanner";
+import Instagram from "../component/Instagram";
+import Product from "../component/Product";
 
 const index = ({ products, bannerData }) => {
     return (

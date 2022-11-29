@@ -1,6 +1,6 @@
 import React from "react";
-import Quote from "./components/Quote";
-import Spotify from "./components/Spotify";
+import Quote from "../component/Quote";
+import Spotify from "../component/Spotify";
 
 const playlist = () => {
     return (

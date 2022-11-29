@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
-import { urlFor } from "../../lib/client";
+import { urlFor } from "../lib/client";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -33,7 +33,6 @@ const Headerbanner = ({ headerBanner }) => {
     }, [currIndex]);
 
     let picUrl = urlFor(headerBanner[currIndex].image.asset._ref);
-    console.log("wads", picUrl);
 
     return (
         <section>

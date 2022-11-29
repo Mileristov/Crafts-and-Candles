@@ -1,8 +1,8 @@
 import React from "react";
-import About from "./components/About";
-import { client } from "../lib/client";
-import Fans from "./components/Fans";
-import Candles from "./components/Candles";
+import About from "../component/About";
+
+import Fans from "../component/Fans";
+import Candles from "../component/Candles";
 
 const about = () => {
     return (
