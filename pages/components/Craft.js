@@ -1,6 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+
 const Craft = () => {
     return (
         <div className="craft-wrap">
@@ -57,18 +58,18 @@ const Craft = () => {
 
             <div className="craft-img">
                 <div>
-                    <Image src="/4v4.jpg" alt="img" />
+                    <img src="/4v4.jpg" alt="img" />
                 </div>
                 <div>
-                    <Image src="/5v5.jpg" alt="img" />
+                    <img src="/2v2.jpg" alt="img" />
                 </div>
             </div>
             <div className="craft-text">
                 <p>
                     These days, anyone can make a candle quickly by cutting
-                    corners, but to make a candle of the highest quality – a
+                    corners, but to make a candle of the highest quality a
                     clean, smoke-free and calm burn, minimal drip, and an
-                    ability to maintain shape – that needs to be done by true
+                    ability to maintain shape that needs to be done by true
                     experts.
                 </p>
                 <p>
@@ -81,7 +82,7 @@ const Craft = () => {
             </div>
             <div className="full-img">
                 <div>
-                    <Image src="/1v1.jpg" alt="img" />
+                    <img src="/1v1.jpg" alt="img" />
                 </div>
             </div>
         </div>

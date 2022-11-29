@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import { urlFor } from "../../lib/client";
 import { motion } from "framer-motion";
 import Link from "next/link";

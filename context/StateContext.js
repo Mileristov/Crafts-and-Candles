@@ -4,42 +4,14 @@ import { toast } from "react-hot-toast";
 const Context = createContext();
 
 export const StateContext = ({ children }) => {
-    const initialCart = [];
-    const initialQuantity = 0;
     const [showCart, setShowCart] = useState(false);
-    const [cartItems, setCartItems] = useState(initialCart);
+    const [cartItems, setCartItems] = useState([]);
     const [totalPrice, setTotalPrice] = useState(0);
-    const [totalQuantities, setTotalQuantities] = useState(initialQuantity);
+    const [totalQuantities, setTotalQuantities] = useState(0);
     const [qty, setQty] = useState(1);
 
     let foundProduct;
     let index;
-
-    useEffect(() => {
-        const cartData = JSON.parse(localStorage.getItem("cart"));
-        if (cartData) {
-            setCartItems(cartData);
-        }
-    }, []);
-
-    useEffect(() => {
-        if (cartItems !== initialCart) {
-            localStorage.setItem("cart", JSON.stringify(cartItems));
-        }
-    }, [cartItems]);
-
-    useEffect(() => {
-        const cartQuantity = JSON.parse(localStorage.getItem("quantity"));
-        if (cartQuantity) {
-            setTotalQuantities(cartQuantity);
-        }
-    }, []);
-
-    useEffect(() => {
-        if (totalQuantities !== initialQuantity) {
-            localStorage.setItem("quantity", JSON.stringify(totalQuantities));
-        }
-    }, [totalQuantities]);
 
     const onAdd = (product, quantity) => {
         const checkProductInCart = cartItems.find(

@@ -178,7 +178,7 @@ header .nav-btn {
 }
 .cart-icon:hover {
     transform: scale(1.1, 1.1);
-    background-color: #000000;
+    opacity: 0.1;
 }
 .cart-item-qty {
     position: absolute;

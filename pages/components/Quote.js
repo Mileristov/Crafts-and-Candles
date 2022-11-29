@@ -1,11 +1,12 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+
 import React from "react";
 
 const Quote = () => {
     return (
         <div className="about-wrap">
             <div className="right-about-container">
-                <Image src="/radio.jpg" alt="spotify radio candle" />
+                <img src="/radio.jpg" alt="spotify radio candle" />
             </div>
             <div className="left-about-container">
                 <h1>
