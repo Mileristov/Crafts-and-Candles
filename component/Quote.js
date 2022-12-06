@@ -5,7 +5,7 @@ import React from "react";
 const Quote = () => {
     return (
         <div className="about-wrap">
-            <div className="right-about-container">
+            <div className="quote-left">
                 <img src="/radio.jpg" alt="spotify radio candle" />
             </div>
             <div className="left-about-container">

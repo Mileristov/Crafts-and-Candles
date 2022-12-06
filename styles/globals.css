@@ -825,6 +825,10 @@ footer .location h4 {
     padding-bottom: 50px;
 }
 
+.quote-left {
+    padding: 30px;
+}
+
 /*   success  */
 
 .success-wrapper {

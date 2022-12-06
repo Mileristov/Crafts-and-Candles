@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineShopping } from "react-icons/ai";
 import { useRef } from "react";
@@ -8,6 +8,9 @@ import { useStateContext } from "../context/StateContext";
 const Navbar = () => {
     const navRef = useRef();
     const { showCart, setShowCart, totalQuantities } = useStateContext();
+    const [cartQuantity, setCartQuantity] = useState(0); // To avoid React hydration error
+
+    useEffect(() => setCartQuantity(totalQuantities), [totalQuantities]);
 
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
@@ -41,7 +44,7 @@ const Navbar = () => {
                 onClick={() => setShowCart(true)}
             >
                 <AiOutlineShopping />
-                <span className="cart-item-qty">{totalQuantities}</span>
+                <span className="cart-item-qty">{cartQuantity}</span>
             </button>
             {showCart && <Cart />}
         </header>
