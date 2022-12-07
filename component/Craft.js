@@ -29,20 +29,7 @@ const Craft = () => {
                     unevenly. This is why we started Arts and Candles .
                 </p>
             </motion.div>
-            <motion.div
-                initial={{
-                    x: 500,
-                    opacity: 0,
-                }}
-                animate={{
-                    x: 0,
-                    opacity: 1,
-                }}
-                transition={{
-                    duration: 1.5,
-                }}
-                className="craft-text"
-            >
+            <div className="craft-text">
                 <h1>THE PERFECT CANDLE CAN&apos;T BE RUSHED.</h1>
                 <p>
                     The art of candle making emerged almost 5000 years ago. By
@@ -54,7 +41,7 @@ const Craft = () => {
                     smoke-free and calm burn, minimal drip, and an ability to
                     maintain shape this needs to be done by true experts.
                 </p>
-            </motion.div>
+            </div>
 
             <div className="craft-img">
                 <div>

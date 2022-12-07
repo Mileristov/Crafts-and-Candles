@@ -1,6 +1,6 @@
 import React from "react";
-
 import { motion } from "framer-motion";
+
 const About = () => {
     return (
         <div className="about-wrap">
@@ -35,24 +35,13 @@ const About = () => {
                 </p>
                 <p>
                     We design modern sculptural candles and homewares, founded
-                    on the principles of minimalism – clean geometric lines,
+                    on the principles of minimalism clean geometric lines,
                     devoid of clutter and decoration, relying on the material to
                     form the art itself.
                 </p>
             </motion.div>
             <div className="right-about-container">
-                <motion.video
-                    initial={{
-                        x: 500,
-                        opacity: 0,
-                    }}
-                    animate={{
-                        x: 0,
-                        opacity: 1,
-                    }}
-                    transition={{
-                        duration: 1.5,
-                    }}
+                <video
                     width={"100%"}
                     height="auto"
                     autoPlay
@@ -60,8 +49,8 @@ const About = () => {
                     playsInline
                     muted
                 >
-                    <source src="video1.mp4" type="video/mp4"></source>
-                </motion.video>
+                    <source src="video1.mp4"></source>
+                </video>
             </div>
         </div>
     );

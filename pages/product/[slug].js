@@ -39,6 +39,9 @@ const ProductDetails = ({ product, products }) => {
     return (
         <div className="wrap">
             <div className="product-container">
+                <div className="img-wrap-one hidden">
+                    <img src={urlFor(image && image[index])} className="" />
+                </div>
                 {isDesktop
                     ? image?.map((item, i) => (
                           <div

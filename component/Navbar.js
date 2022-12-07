@@ -17,37 +17,51 @@ const Navbar = () => {
     };
 
     return (
-        <header className="nav-bar">
-            <Link href="/">
-                <h3 className="logo">The Candle</h3>
-            </Link>
-            <nav ref={navRef}>
-                <Link href="/about">About</Link>
+        <>
+            <div className="home">
+                <Link href="/">
+                    <h1 className="logo">The Candle</h1>
+                </Link>
+            </div>
+            <header className="nav-bar">
+                <nav ref={navRef}>
+                    <Link href="/about" onClick={showNavbar}>
+                        About
+                    </Link>
 
-                <Link href="/contactpage">Contact</Link>
+                    <Link href="/contactpage" onClick={showNavbar}>
+                        Contact
+                    </Link>
 
-                <Link href="/playlist"> Radio </Link>
+                    <Link href="/playlist" onClick={showNavbar}>
+                        Radio
+                    </Link>
 
-                <Link href="/craft"> Crafting </Link>
+                    <Link href="/craft" onClick={showNavbar}>
+                        Crafting
+                    </Link>
 
-                <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                    <FaBars />
+                    <button
+                        className="nav-btn nav-close-btn"
+                        onClick={showNavbar}
+                    >
+                        <FaBars />
+                    </button>
+                </nav>
+                <button className="nav-btn" onClick={showNavbar}>
+                    Menu
                 </button>
-            </nav>
-
-            <button className="nav-btn" onClick={showNavbar}>
-                Menu
-            </button>
-            <button
-                type="button"
-                className="cart-icon"
-                onClick={() => setShowCart(true)}
-            >
-                <AiOutlineShopping />
-                <span className="cart-item-qty">{cartQuantity}</span>
-            </button>
-            {showCart && <Cart />}
-        </header>
+                <button
+                    type="button"
+                    className="cart-icon"
+                    onClick={() => setShowCart(true)}
+                >
+                    <AiOutlineShopping />
+                    <span className="cart-item-qty">{cartQuantity}</span>
+                </button>
+                {showCart && <Cart />}
+            </header>
+        </>
     );
 };
 
