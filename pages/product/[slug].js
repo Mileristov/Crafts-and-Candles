@@ -69,20 +69,7 @@ const ProductDetails = ({ product, products }) => {
                       ))}
             </div>
 
-            <motion.div
-                initial={{
-                    x: 500,
-                    opacity: 0,
-                }}
-                animate={{
-                    x: 0,
-                    opacity: 1,
-                }}
-                transition={{
-                    duration: 1.5,
-                }}
-                className="product-detail"
-            >
+            <div className="product-detail">
                 <h1 className="margin">{name}</h1>
                 <h5 className="margin-one">Details </h5>
                 <p className="margin-one">{details}</p>
@@ -115,7 +102,7 @@ const ProductDetails = ({ product, products }) => {
                         Buy Now
                     </button>
                 </div>
-            </motion.div>
+            </div>
         </div>
     );
 };
