@@ -591,6 +591,7 @@ footer .right {
     right: 5px;
     width: 100%;
     padding: 30px 65px;
+    z-index: 3;
 }
 
 .btn-container {
