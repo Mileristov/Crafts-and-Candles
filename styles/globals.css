@@ -1,14 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600&display=swap");
 html,
 body {
     padding: 0;
     margin: 0;
-    font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont,
-        Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-        Helvetica Neue, sans-serif;
+    font-family: "Poppins", "Cousine", sans-serif, -apple-system,
+        BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+        Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+main {
+    margin-bottom: 40px;
+}
 * {
     box-sizing: border-box;
 }
@@ -237,8 +240,10 @@ header .nav-btn {
 }
 
 @media only screen and (max-width: 650px) {
-    .home {
-        display: none;
+    .home a {
+        font-size: 14px;
+        margin-bottom: -20px;
+        font-family: "Oswald";
     }
 }
 
@@ -279,7 +284,6 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 6rems 0;
     background: rgba(68, 45, 45, 0.8);
 }
 
@@ -581,7 +585,7 @@ footer .right {
     cursor: pointer;
 }
 .cart-bottom {
-    position: absolute;
+    position: fixed;
     bottom: 12px;
     right: 5px;
     width: 100%;

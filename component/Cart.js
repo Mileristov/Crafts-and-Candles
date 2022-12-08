@@ -150,7 +150,6 @@ const Cart = () => {
                 </div>
                 {cartItems.length >= 1 && (
                     <div className="cart-bottom">
-                        <div></div>
                         <div className="btn-container">
                             <button
                                 type="button"
