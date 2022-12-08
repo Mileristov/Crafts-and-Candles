@@ -586,7 +586,7 @@ footer .right {
     cursor: pointer;
 }
 .cart-bottom {
-    position: fixed;
+    position: absolute;
     bottom: 12px;
     right: 5px;
     width: 100%;
