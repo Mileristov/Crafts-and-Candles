@@ -46,7 +46,7 @@ p {
 
 section {
     height: 100vh;
-    margin: 50px 150px 50px 150px;
+    margin: 50px 100px 50px 100px;
     position: relative;
 }
 
@@ -494,7 +494,7 @@ footer .right {
     width: 100%;
     background-color: white;
     float: right;
-    padding: 40px 10px;
+    padding: 70px 10px;
     position: relative;
 }
 
@@ -586,12 +586,14 @@ footer .right {
     cursor: pointer;
 }
 .cart-bottom {
-    position: absolute;
-    bottom: 12px;
-    right: 5px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
     width: 100%;
     padding: 30px 65px;
     z-index: 3;
+    height: 70px;
+    align-items: center;
 }
 
 .btn-container {
@@ -603,17 +605,13 @@ footer .right {
     max-width: 400px;
     padding: 10px 12px;
     font-size: 20px;
-    margin-top: 10px;
-    margin-top: 40px;
+    margin-top: 0px;
     text-transform: uppercase;
     background-color: #1e1e23;
     color: white;
     cursor: pointer;
     transform: scale(1, 1);
     transition: transform 0.5s ease;
-}
-.btn:hover {
-    transform: scale(1.1, 1.1);
 }
 
 .product-detail-image {
