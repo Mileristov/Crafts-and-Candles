@@ -41,6 +41,10 @@ const Navbar = () => {
                         Crafting
                     </Link>
 
+                    <Link href="/shop" onClick={showNavbar}>
+                        Store
+                    </Link>
+
                     <button
                         className="nav-btn nav-close-btn"
                         onClick={showNavbar}

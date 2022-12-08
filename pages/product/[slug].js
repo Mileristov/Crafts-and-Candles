@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect } from "react";
-import { AiOutlineLeft, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { client, urlFor } from "../../lib/client";
 import { useStateContext } from "../../context/StateContext";
 
